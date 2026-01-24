@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Pizza Ordering Form</title>
+</head>
+
+<body>
+
+    <h1>Pizza Ordering Form</h1>
+
+    <form action = "#" method = "post">
+
+     <h2>Contact Information</h2>
+
+     <label for = "inputName">Name: </label>   
+     <input type = "text" name = "inputName" id = "inputName" required>
+
+     <br>
+
+     <label for = "inputPhone">Phone: </label>
+     <input type = "phone" name = "inputPhone" id = "inputPhone" required>
+
+     <br>
+
+     <label for = "inputEmail">Email: </label>
+     <input type = "email" name = "inputEmail" id = "inputEmail" required>
+
+     <br> <br>
+
+     <h2>Select Pizza Size</h2>
+
+     <label for = "selectSize">Pizza Size: </label>
+
+     <select name = "selectSize" id = "selectSize" required>
+         
+        <option value = "">--Select Size--</option>
+         
+        <option value = "Medium">Medium</option>
+        <option value = "Large">Large</option>
+        <option value = "XLarge">XLarge</option>
+
+     </select>
+
+     <br> <br>
+
+     <h2>Select Sauce</h2>
+
+     <input type = "radio" name = "inputSauce" id = "marinaraSauce">
+     <label for = "marinaraSauce">Marinara</label>
+
+    <br>
+
+     <input type = "radio" name = "inputSauce" id = "ranchSauce">
+     <label for = "ranchSauce">Ranch</label>
+
+    <br>
+
+     <input type = "radio" name = "inputSauce" id = "noSauce">
+     <label for = "noSauce">No Sauce</label>
+
+     <br> <br>
+
+     <h2>Select Toppings</h2>
+
+     <input type = "checkbox" name = "inputTopping" id = "pepperoniTopping">
+     <label for = "pepperoniTopping">Pepperoni</label>
+
+     <input type = "checkbox" name = "inputTopping" id = "sausageTopping">
+     <label for = "sausageTopping">Sausage</label>
+
+     <br>
+
+     <input type = "checkbox" name = "inputTopping" id = "mushroomTopping">
+     <label for = "mushroomTopping">Mushroom</label>
+
+     <input type = "checkbox" name = "inputTopping" id = "pineappleTopping">
+     <label for = "pineappleTopping">Pineapple</label>
+
+     <br>
+
+     <input type = "checkbox" name = "inputTopping" id = "peppersTopping">
+     <label for = "peppersTopping">Peppers</label>
+
+     <input type = "checkbox" name = "inputTopping" id = "onionsTopping">
+     <label for = "onionsTopping">Onions</label>
+
+     <br> <br>
+
+     <h2>Additional Instructions</h2>
+
+     <textarea name = "addInstructions" rows = "4">Add instructions</textarea>
+     
+     <br>
+
+     <input type = "submit" value = "Submit">
+
+    </form>
+
+    <br> <br>
+
+    <h2>List of My Favorite Games</h2>
+
+    <table border = "1">
+
+        <caption>List of My Favorite Games</caption>
+
+        <thead>
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            <tr>
+                <td rowspan = "3">Nintendo</td>
+                <td>Mario Kart 8</td>
+                <td>2014</td>
+            </tr>
+
+            <tr>
+                <td>Super Smash Bros Ultimate</td>
+                <td>2018</td>
+            </tr>
+
+            <tr>
+                <td>Super Mario Bros</td>
+                <td>1985</td>
+            </tr>
+
+            <tr>
+                <td>Rockstar Games</td>
+                <td>GTA V</td>
+                <td>2013</td>
+            </tr>
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan = "3">Count: 4</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
