@@ -10,7 +10,7 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   
   margin: 0;
-  padding: 0 0.5rem 2.5rem 0.5rem;
+  padding: 0.5rem;
   
   color: black;
 
@@ -19,19 +19,19 @@ body {
 h1 {
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4.5rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 600;
 
   text-align: center;
-  margin: 1.2rem 0 0.6rem 0;
+  margin: 0.5rem 0 0.75rem 0;
 
 }
 
 h2 {
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 400;
 
   margin: 1.1rem 0 0.5rem 0;
 
@@ -40,7 +40,7 @@ h2 {
 h3 {
 
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 300;
   margin: 1.2rem 0 0.5rem 0;
 
 }
@@ -54,38 +54,77 @@ p {
 
 .blue {
 
+  background-color: darkblue;
+  color: white;
+
+  padding: 1rem;
+  margin:1rem 0;
+  border: 0.2rem solid black;
+  
 }
 
 #paragraph2 {
+
+  background-color: white;
+  border: 0.25rem solid green;
+
+  width: 70%;
+  margin: 1rem auto;
+  padding: 1rem 1.25rem;
+
+  line-height: 2;
 
 }
 
 
 ol {
 
+  list-stye-type: decimal-leading-zero;
+  padding-left: 1.75rem;
+  margin: 0.25rem 0 1rem 0;
+
 }
 
-ol a:link, ol a:visited {
+a:link, a:visited {
+
+  color: blue;
 
 }
 
-p a[href* = "w3schools"]:link, p a[href* = "w3schools"] {
+a[href* = "w3schools"]:link, a[href* = "w3schools"]:visited {
+
+  color: red;
 
 }
 
 table {
 
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 0.25rem;
+  margin-left: 0;
+  width: 36rem;
+
 }
 
 th {
+
+  background-color: lightgray;
+  font-weight: 200;
 
 }
 
 td {
 
+  background-color: white;
+
 }
 
 th, td {
+
+  border: 0.1rem solid black;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
 
 }
 
