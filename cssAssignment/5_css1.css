@@ -19,29 +19,29 @@ body {
 h1 {
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 800;
 
   text-align: center;
-  margin: 0.5rem 0 0.75rem 0;
+  margin: 0.6rem 0 0.9rem 0;
 
 }
 
 h2 {
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 700;
 
-  margin: 1.1rem 0 0.5rem 0;
+  margin: 0.6rem 0 0.6rem 0;
 
 }
 
 h3 {
 
   font-size: 1.25rem;
-  font-weight: 300;
-  margin: 1.2rem 0 0.5rem 0;
+  font-weight: 600;
+  margin: 1.rem 0 0.5rem 0;
 
 }
 
@@ -57,9 +57,9 @@ p {
   background-color: darkblue;
   color: white;
 
-  padding: 1rem;
+  padding: 1.1rem 1rem;
   margin:1rem 0;
-  border: 0.2rem solid black;
+  border: 0.12rem solid black;
   
 }
 
@@ -68,9 +68,9 @@ p {
   background-color: white;
   border: 0.25rem solid green;
 
-  width: 70%;
+  width: 80%;
   margin: 1rem auto;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
 
   line-height: 2;
 
@@ -79,7 +79,7 @@ p {
 
 ol {
 
-  list-stye-type: decimal-leading-zero;
+  list-style-type: decimal-leading-zero;
   padding-left: 1.75rem;
   margin: 0.25rem 0 1rem 0;
 
@@ -110,7 +110,7 @@ table {
 th {
 
   background-color: lightgray;
-  font-weight: 200;
+  font-weight: 500;
 
 }
 
