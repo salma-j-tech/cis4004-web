@@ -1,6 +1,6 @@
 html {
 
-  font-size: 90%;
+  font-size: 80%;
 
 }
 
@@ -19,7 +19,7 @@ body {
 h1 {
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 750;
 
   text-align: center;
@@ -68,7 +68,7 @@ p {
   background-color: white;
   border: 0.25rem solid green;
 
-  width: 78%;
+  width: 58%;
   margin: 1rem 0 1rem 2rem;
   padding: 1.25rem 1.5rem;
 
@@ -82,6 +82,7 @@ ol {
   list-style-type: decimal-leading-zero;
   padding-left: 1.75rem;
   margin: 0.25rem 0 1rem 0;
+  font-size: 1.2rem;
 
 }
 
@@ -92,6 +93,12 @@ a:link, a:visited {
 }
 
 a[href* = "w3schools"]:link, a[href* = "w3schools"]:visited {
+
+  color: red;
+
+}
+
+p a[href* = "w3schools"] {
 
   color: red;
 
