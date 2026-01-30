@@ -19,7 +19,7 @@ body {
 h1 {
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
 
   text-align: center;
@@ -68,8 +68,8 @@ p {
   background-color: white;
   border: 0.25rem solid green;
 
-  width: 80%;
-  margin: 1rem auto;
+  width: 78%;
+  margin: 1rem 0 1rem 2rem;
   padding: 1.25rem 1.5rem;
 
   line-height: 2;
