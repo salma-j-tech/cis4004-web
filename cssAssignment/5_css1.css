@@ -70,7 +70,7 @@ p {
 
   width: 52%;
   margin: 1rem 0 1rem 2rem;
-  padding: 1.5rem 2025rem;
+  padding: 1.5rem 2.25rem;
 
   line-height: 2;
 
@@ -86,19 +86,13 @@ ol {
 
 }
 
-a:link, a:visited {
+ol a{
 
   color: blue;
-
+  
 }
 
-a[href* = "w3schools"]:link, a[href* = "w3schools"]:visited {
-
-  color: red;
-
-}
-
-p a[href* = "w3schools"] {
+p a[href*="w3schools'] {
 
   color: red;
 
