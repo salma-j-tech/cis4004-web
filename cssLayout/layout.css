@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Times New Roman", Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, sans-serif;
 }
 
 #jumpMenu {
@@ -26,7 +26,7 @@ main header {
 
   top: 0;
   left: 15%;
-  width: 80%;
+  width: 85%;
   height: 80px;
 
   background-color: lightgrey;
@@ -42,8 +42,8 @@ main header nav button {
 }
 
 #container {
-  display: felx;
-  felx-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #container article {
