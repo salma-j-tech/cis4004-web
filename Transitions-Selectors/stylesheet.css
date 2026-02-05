@@ -1,1 +1,17 @@
+#menuItems button {
+  width: 100%
+  display: block;
+  cursor:pointer;
 
+  background: blue;
+
+  color: white;
+
+  border: 1px solid black;
+  padding: 10px 12px;
+  font-size: 18px
+}
+
+#menuItems button: hover {
+  background: royalBlue;
+}
