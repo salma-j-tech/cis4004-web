@@ -95,7 +95,7 @@ a[href* = "google"]::after {
   margin-left: 6px;
   vertical-align: middle;
 
-  background-image: url("arrowarrow.png");
+  background-image: url("arrow.png");
   background-repeat: no-repeat;
 
   background-size: contain;
