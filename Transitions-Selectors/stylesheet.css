@@ -85,7 +85,7 @@ display: inline-block;
 }
 
 a[href* = "google"]::after {
-  content: url("");
+  content: "";
   display: inline-block;
 
   vertical-align: middle;
