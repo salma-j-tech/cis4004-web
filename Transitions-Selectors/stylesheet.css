@@ -76,8 +76,6 @@ a[href = "google"]::after {
   background-color: transparent;
 
   text-decoration: none;
-  
-  font-size: 17px;
 }
 
 #jumpMenu li a:hover {
@@ -101,6 +99,7 @@ article:hover {
   background-color: dimgray;
   transform: scale(1.1);
 }
+
 
 
 
