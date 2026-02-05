@@ -79,8 +79,9 @@ article p:first-of-type::first-letter {
 }
 
 a[href* = "google"] {
-  
-  position: relative;
+
+  content: url("arrow.png");
+  position: inline-block;;
   padding-right: 18px;
   
 }
@@ -101,10 +102,6 @@ a[href* = "google"]::after {
   background-size: contain;
 }
 
-a[href* = "google"]::after img {
-  width: 15px;
-  height: 15px;
-}
 
 #menuItems button {
   width: 100%;
