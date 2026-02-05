@@ -80,26 +80,24 @@ article p:first-of-type::first-letter {
 
 a[href* = "google"] {
 
-  content: url("arrow.png");
-  position: inline-block;;
-  padding-right: 18px;
+display: inline-block;
   
 }
 
 a[href* = "google"]::after {
-  content: url("arrow.png");
+  content: url("");
   display: inline-block;
+
+  vertical-align: middle;
 
   width: 15px;
   height: 15px;
 
   margin-left: 6px;
-  vertical-align: middle;
-
-  background-image: url("arrow.png");
-  background-repeat: no-repeat;
-
+  
+  background: url("arrow.png") no-repeat center;
   background-size: contain;
+  
 }
 
 
