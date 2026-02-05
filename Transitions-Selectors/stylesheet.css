@@ -101,6 +101,11 @@ a[href* = "google"]::after {
   background-size: contain;
 }
 
+a[href* = "google"]::after img {
+  width: 15px;
+  height: 15px;
+}
+
 #menuItems button {
   width: 100%;
   display: block;
