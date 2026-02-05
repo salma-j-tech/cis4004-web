@@ -52,7 +52,7 @@ h1 {
 
 #container {
   display: grid;
-  grid-template-columns: repeats(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   gap: 50px;
 
@@ -73,12 +73,12 @@ article p {
 article p:first-of-type::first-letter {
   font-family: "Times New Roman", Times, serif;
 
-  font-size: 35px;
+  font-size: 36px;
 
   line-height: 1;
 }
 
-a[href = "google"] {
+a[href = "https://www.google.com/"] {
   
   position: relative;
   padding-right: 18px;
@@ -102,16 +102,16 @@ a[href = "google"]::after {
 }
 
 #menuItems button {
-  width: 100%
+  width: 100%;
   display: block;
 
   background: blue;
   color: white;
 
-  cursor:pointer;
+  cursor: pointer;
 
   border: 1px solid black;
-  font-size: 17px
+  font-size: 17px;
 
   padding: 12px;
 }
@@ -163,12 +163,14 @@ article {
 
   transition-property: color, transform;
 
-  transation-duration: 2s;
+  transition-duration: 2s;
   transition-timing-function: ease;
 }
 
 article:hover {
   background-color: dimgray;
+  color: black;
+  
   transform: scale(1.1);
 }
 
