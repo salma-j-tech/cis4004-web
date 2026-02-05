@@ -1,3 +1,34 @@
+article p:first-of-type::first-letter {
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 35px;
+
+  line-height: 1;
+}
+
+a[href = "google"] {
+  
+  position: relative;
+  padding-right: 18px;
+  
+}
+
+a[href = "google"]::after {
+  content: "";
+  display: inline-block;
+
+  width: 15px;
+  height: 15px;
+
+  margin-left: 6px;
+  vertical-align: middle;
+
+  background-image: url("arrowarrow.png");
+  background-repeat: no-repeat;
+
+  background-size: contain;
+}
+
 #menuItems button {
   width: 100%
   display: block;
@@ -54,6 +85,23 @@
 
   color: white;
 }
+
+
+article {
+  color: lightgray;
+  transform: scale(1);
+
+  transition-property: color, transform;
+
+  transation-duration: 2s;
+  transition-timing-function: ease;
+}
+
+article:hover {
+  background-color: dimgray;
+  transform: scale(1.1);
+}
+
 
 
 
