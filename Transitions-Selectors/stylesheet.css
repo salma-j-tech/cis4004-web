@@ -86,7 +86,7 @@ a[href* = "google"] {
 }
 
 a[href* = "google"]::after {
-  content: "";
+  content: url("arrow.png");
   display: inline-block;
 
   width: 15px;
