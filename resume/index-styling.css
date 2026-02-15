@@ -1,1 +1,186 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  
+  line-height: 1.65;
+  
+  color: #1b1b1b;
+  background: #f7f6f4;
+}
+
+header {
+  background: #ffffff;
+
+  border-bottom: 1px solid black;
+
+  padding: 22px 16px;
+}
+
+header h1 {
+  color: #333;
+  font-size: 2rem;
+
+  margin: 0;
+}
+
+header p {
+  margin: 10px 0 0 0;
+  color: #333;
+}
+
+header p a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  margin-top: 16px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+nav a {
+  display: inline-block;
+
+  padding: 8px 12px;
+
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  background-color: white;
+  color: black;
+
+  font-weight: 600;
+}
+
+nav a:hover {
+  background-color: #e6e6e6;
+}
+
+main {
+  max-width: 1000px;
+
+  padding: 20px 16px 40px 16px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  border: 1px solid gray;
+
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+section h2 {
+  margin: 0 0 10px 0;
+
+  font-size: 1.25rem;
+
+  border-bottom: 2px solid black;
+
+  padding-bottom: 6px;
+}
+
+article {
+  margin-top: 10px;
+
+  padding-top: 10px;
+
+  border-top: 1px solid lightgray;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 6px 0 0 0;
+  color: dimgray;
+}
+
+ul {
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+li {
+  margin: 6px 0;
+}
+
+section a {
+  color: black;
+
+  font-weight: 600;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+figure {
+  margin: 10px 0 0 0;
+}
+
+figcaption {
+  color: dimgray;
+
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+@media (min-width: 900px) {
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+  align-items: flex-start;
+}
+
+  section {
+    flex: 1 1 50%;
+  }
+
+  section:first-of-type {
+    flex: 1 1 100%;
+  }
+
+  section ul {
+    columns: 2;
+  }
+  
+}
+
 
