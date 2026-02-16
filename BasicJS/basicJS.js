@@ -41,4 +41,20 @@ function runForLoop() {
   
 } // end runForLoop function
 
+function showOddNumbers() {
+
+  const counter = counter();
+  let output = "";
+
+  for (let i = 1; i <= counter; i = i + 2;)
+  { // start for
+
+    output += i + " ";
+    
+  } // end for loop
+
+  document.getElementById("oddNumbersResult").innerText = output.trim();
+  
+} // end showOddNumbers func
+
 
