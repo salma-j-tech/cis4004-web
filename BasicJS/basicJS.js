@@ -24,6 +24,21 @@ function tickDown() { // counter - 1
   
 } // end tickDown
 
+function runForLoop() {
 
+  const counter = counter();
+
+  let output = "";
+
+  for (let i = 0; i <= counter; i++)  
+  { // start for
+
+    output += i + " ";
+    
+  } // end for
+
+  document.getElementById("forLoopResult").innerText = output.trim();
+  
+} // end runForLoop function
 
 
