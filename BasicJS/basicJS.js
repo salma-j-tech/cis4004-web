@@ -129,3 +129,31 @@ function loadCar(num) {
   document.getElementById("carColor").value = carObj.cColor;
   
 } // end loadCar func
+
+// text color change func
+function changeColor(colorNum) {
+
+  const p = document.getElementById("styleParagraph");
+
+  if (colorNum === 1)
+  { // start if red
+
+    p.style.color = "red";
+    
+  } // end if red
+
+  else if
+  { // start else if green
+
+    p.style.color = "green";
+    
+  } // end else if green
+
+  else if
+  { // else if blue
+
+    p.style.color = "blue";
+    
+  } // end else if blue
+  
+} // end changeColor func
