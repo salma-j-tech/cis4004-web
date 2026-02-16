@@ -57,4 +57,26 @@ function showOddNumbers() {
   
 } // end showOddNumbers func
 
+function addMultiplesToArray() {
+
+  const counter = counter();
+  const arr = [];
+
+  for (let i = counter; i >= 5; i--)
+  { // start for
+
+    if (i % 5 === 0)
+    { // start if
+
+      arr.push(i);
+      
+    } // end if
+    
+  } // end for
+
+  // print array
+  console.log(arr);
+  
+} // end addMultiplesToArray func
+
 
