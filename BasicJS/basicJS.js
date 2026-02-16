@@ -26,11 +26,11 @@ function tickDown() { // counter - 1
 
 function runForLoop() {
 
-  const counter = counter();
+  const count = counter();
 
   let output = "";
 
-  for (let i = 0; i <= counter; i++)  
+  for (let i = 0; i <= count; i++)  
   { // start for
 
     output += i + " ";
@@ -43,26 +43,26 @@ function runForLoop() {
 
 function showOddNumbers() {
 
-  const counter = counter();
+  const count = counter();
   let output = "";
 
-  for (let i = 1; i <= counter; i = i + 2;)
+  for (let i = 1; i <= count; i = i + 2)
   { // start for
 
     output += i + " ";
     
   } // end for loop
 
-  document.getElementById("oddNumbersResult").innerText = output.trim();
+  document.getElementById("oddNumberResult").innerText = output.trim();
   
 } // end showOddNumbers func
 
 function addMultiplesToArray() {
 
-  const counter = counter();
+  const count = counter();
   const arr = [];
 
-  for (let i = counter; i >= 5; i--)
+  for (let i = count; i >= 5; i--)
   { // start for
 
     if (i % 5 === 0)
@@ -90,9 +90,11 @@ function printCarObject() {
 
     cType: type,
     cMPG: mpg,
-    cColor: color;
+    cColor: color
     
   }; // end const carObj
+
+console.log(carObj);
   
 } // end printCarObject function
 
@@ -142,14 +144,14 @@ function changeColor(colorNum) {
     
   } // end if red
 
-  else if
+  else if (colorNum === 2)
   { // start else if green
 
     p.style.color = "green";
     
   } // end else if green
 
-  else if
+  else if (colorNum === 3)
   { // else if blue
 
     p.style.color = "blue";
