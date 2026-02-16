@@ -79,4 +79,53 @@ function addMultiplesToArray() {
   
 } // end addMultiplesToArray func
 
+function printCarObject() {
 
+  const type = document.getElementById("carType").value;
+  const mpg = document.getElementById("carMPG").value;
+
+  const color = document.getElementById("carColor").value;
+
+  const carObj = {
+
+    cType: type,
+    cMPG: mpg,
+    cColor: color;
+    
+  }; // end const carObj
+  
+} // end printCarObject function
+
+function loadCar(num) {
+
+  let carObj;
+
+  if (num === 1)
+  { // start if
+
+    carObj = carObject1;
+    
+  } // end if
+
+  else if (num === 2)
+  { // start else if
+
+    carObj = carObject2;
+    
+  } // end else if
+
+  else if (num === 3)
+  { // start else if 2
+
+    carObj = carObject3;
+    
+  } // end else if 2
+
+  // back to function
+
+  document.getElementById("carType").value = carObj.cType;
+  document.getElementById("carMPG").value = carObj.cMPG;
+
+  document.getElementById("carColor").value = carObj.cColor;
+  
+} // end loadCar func
