@@ -1,10 +1,10 @@
-window.start = function () {
+window.onload = function () {
 
   document.getElementById("filterContent").style.display = "none";
 
   document.getElementById("newContent").style.display = "none";
   
-} // end window.start
+} // end window.onload
 
 function showFilter() {
 
@@ -62,10 +62,7 @@ function filterArticles() {
   let recipeChecked = document.getElementById("recipeCheckbox").checked;
   let updateChecked = document.getElementById("updateCheckbox").checked;
 
-  let articles = document.getElementById("articleList")
-  {
-    .getElementsByTagName("article");
-  } // end let
+  let articles = document.getElementById("articleList").getElementsByTagName("article");
 
   // counter for loop
   for (let i = 0; i < articles.length; i++)
@@ -147,23 +144,23 @@ function addNewArticle() {
   // new marker label
   let newMarker = document.createElement("span");
   newMarker.classList.add("marker");
-  newMarkerinnerText = markerText;
+  newMarker.innerText = labelText;
   
 
   // add title
   let h2 = document.createElement("h2");
-  h2.innerText = title;
+  h2.innerText = articleTitle;
   
   // add p
   let p = document.createElement("p");
-  p.innerText = text;
+  p.innerText = articleText;
   
   // attach
-  article.appendChild(marker);
-  article.appendChild(h2);
-  article.appendChild(p);
+  newArticle.appendChild(newMarker);
+  newArticle.appendChild(h2);
+  newArticle.appendChild(p);
   
-  document.getElementById("articleList").appendChild(article);
+  document.getElementById("articleList").appendChild(newArticle);
   
   // clear input
   document.getElementById("inputHeader").value = "";
