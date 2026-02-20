@@ -98,3 +98,78 @@ function filterArticles() {
   
 } // end filterArticles
 
+
+// create article and add
+function addNewArticle() {
+
+  let articleTitle = document.getElementById("inputHeader").value;
+  let articleText = document.getElementById("inputArticle").value;
+
+  let typeClass = "";
+  let labelText = "";
+
+  if (document.getElementById("opinionRadio").checked)
+  {
+
+    typeClass = "opinion";
+    labelText = "opinion";
+    
+  } // end if
+
+    if (document.getElementById("recipeRadio").checked)
+  {
+
+    typeClass = "recipe";
+    labelText = "Recipe";
+    
+  } // end if
+
+    if (document.getElementById("lifeRadio").checked)
+  {
+
+    typeClass = "update";
+    labelText = "Update";
+    
+  } // end if
+
+  if (articleTitle === "" || articleText === "" || typeClass === "")
+  {
+
+    alert("Fill out everything please. One or more are not filled.");
+    return;
+    
+  } // end if
+
+  // new article element
+  let newArticle = document.createElement("article");
+  newArticle.classList.add(typeClass);
+
+  // new marker label
+  let newMarker = document.createElement("span");
+  newMarker.classList.add("marker");
+  newMarkerinnerText = markerText;
+  
+
+  // add title
+  let h2 = document.createElement("h2");
+  h2.innerText = title;
+  
+  // add p
+  let p = document.createElement("p");
+  p.innerText = text;
+  
+  // attach
+  article.appendChild(marker);
+  article.appendChild(h2);
+  article.appendChild(p);
+  
+  document.getElementById("articleList").appendChild(article);
+  
+  // clear input
+  document.getElementById("inputHeader").value = "";
+  document.getElementById("inputArticle").value = "";
+  
+  // reapply filter
+  filterArticles();
+
+} // end addNewArticle
