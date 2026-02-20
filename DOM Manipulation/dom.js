@@ -29,4 +29,29 @@ function showFilter() {
 } // end showFilter
 
 
+// func for showAddNew
+function showAddNew() {
+
+  // hide filter menu
+  document.getElementById("filterContent").style.display = "none";
+
+  let formBox = document.getElementById("newContent");
+
+  if (formBox.style.display === "none")
+  { // start if
+
+    formBox.style.display = "flex";
+    
+  } // end if
+
+  else
+  {
+
+    formBox.style.display = "none";
+    
+  } // end else
+
+} // end showAddNew func
+
+
 
