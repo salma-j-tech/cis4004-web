@@ -1,16 +1,32 @@
-// func to run after page loaded
-document.addEventListener("contentLoaded", function () {
-  
+window.start = function () {
+
   document.getElementById("filterContent").style.display = "none";
+
+  document.getElementById("newContent").style.display = "none";
+  
+} // end window.start
+
+function showFilter() {
+
   document.getElementById("newContent").style.display = "none";
 
-  filerArticles();
-  
-}) // end contentLoaded func
+  let menuBox = document.getElementById("filterContent");
 
-// func to display filter
-function displayFilter() {
+  // for visibility
+  if (menuBox.style.display === "none")
+  { // start if
 
-  const filterForm = document.getElementById("filterContent");
-  
-} // end displayFilter
+    menuBox.style.display = "block";
+    
+  } // end if
+  else
+  {
+
+    menuBox.style.display = "none";
+    
+  } // end else
+
+} // end showFilter
+
+
+
