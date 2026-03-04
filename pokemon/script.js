@@ -76,8 +76,29 @@ async function findPokemon()
 
   currentPokemon = data;
 
+  const imgEl = document.getElementById("pokemonImage");
+  
+  const audioEl = document.getElementById("pokemonAudio");
+
   // image aka sprite
-  document.getElementById("pokemonImage").src = data.sprites.front_default;
+  const sprite = data.sprites.front_default;
+
+  if (sprite) 
+  { // start if
+    
+    imgEl.src = sprite;
+    
+    imgEl.style.display = "inline";
+    
+  } // end if
+  else
+  { // start else
+    
+    imgEl.removeAttribute("src");
+    
+    imgEl.style.display = "none";
+    
+  } // end else
 
   // audio
   const cry = (data.cries && (data.cries.latest || data.cries.legacy)) ? (data.cries.latest || data.cries.legacy) : "";
@@ -85,13 +106,17 @@ async function findPokemon()
   if (cry !== "") 
   { // start if
     
-    document.getElementById("pokemonAudio").src = cry;
+    audioEl.src = cry;
+    
+    audioEl.style.display = "inline";
     
   } //end if
   else 
   { // start else
     
-    document.getElementById("pokemonAudio").removeAttribute("src");
+    audioEl.removeAttribute("src");
+    
+    audioEl.style.display = "none";
     
   } // end else
 
