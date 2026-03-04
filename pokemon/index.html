@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pokemon Team Builder</title>
-  <link rel="stylesheet" href="pokemon-style.css" />
-</head>
-
-<body>
-
-  <h2>Pokemon Team Builder</h2>
-
-  <label for="pokemonInput">Name or ID</label>
-  <input id="pokemonInput" type="text" placeholder="e.g., pikachu or 25" />
-  <button id="findBtn" type="button">Find</button>
+  <img id="pokemonImage" alt="pokemon sprite" width="200" style="display:none;" />
 
   <br><br>
 
-  <img id="pokemonImage" alt="pokemon sprite" width="200" />
+  <audio id="pokemonAudio" controls style="display:none;"></audio>
 
   <br><br>
+
+  <select id="move1"></select>
+  <select id="move2"></select>
+  <br>
+  <select id="move3"></select>
+  <select id="move4"></select>
+
+  <br><br>
+
+  <button id="addBtn" type="button">Add to Team</button>
+
+  <hr>
+
+  <div id="team"></div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
